@@ -16,7 +16,8 @@ public class PartA2017 {
     HashMap<String,Integer> ages = new HashMap<String,Integer>();
     ages.put("Bob", 25);
     ages.put("Ann", 23);
-    ages.put("Bob", 24);
+    ages.put("Bob", 24); //this replaces the first Bob, 25 
+    System.out.println(ages); //{Ann=23, Bob=24} 
     
     Integer bob_age = ages.get("Bob");
     ages.put("Cal", bob_age == null? 1 : bob_age + 1);
