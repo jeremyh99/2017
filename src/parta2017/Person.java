@@ -5,6 +5,9 @@
  */
 package parta2017;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author jeremyhodgson
@@ -30,4 +33,21 @@ public class Person {
     public String toString() {
         return _name + ":" + _salary;
     }
+    
+    public static void main(String[] args) {     
+        /*
+        ArrayList<Person> a= new ArrayList<Person>();
+        a.add(new Person("Cal",3));
+        a.add(new Person("Bob",2));
+        a.add(new Person("Ann",1));
+        List<Object> al= new ArrayList<Object>(a);
+        for (Object o : al)
+        System.out.print("["+ o + "]"); 
+        */
+        Organization o = new Organization("Org");
+        o.addPerson(new Person("Cal",3));
+        o.addPerson(new Person("Bob",2));
+        o.addPerson(new Person("Ann",1));
+        System.out.print("["+ o + "]"); 
+    }    
 }

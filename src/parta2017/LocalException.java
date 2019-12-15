@@ -12,5 +12,7 @@ package parta2017;
 public class LocalException extends Exception{
     public LocalException(String msg) {
         super(msg);
-    }
+    }   
 } 
+
+

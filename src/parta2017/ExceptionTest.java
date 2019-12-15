@@ -23,6 +23,29 @@ public class ExceptionTest {
         throw new Exception("A");
     if (v >= 0)
         throw new LocalException("B");
-    return 5;
+    return 5; 
     }
-}
+    
+    public static void main(String[] args) { 
+        /*
+        try {
+            int val = ExceptionTest.method1(0);
+            System.out.println("Val:" + val);
+            System.out.print("the main method try block works");
+            //THE TRY DOESN'T WORK HERE
+        } catch (Exception e) {
+            //System.out.print(e);
+            System.out.print("Exc: " + e);
+        }
+        */
+        
+        try {
+            int val= ExceptionTest.method1(1);
+            System.out.print("Val:" + val);
+        } catch (Exception e) {
+            System.out.print("Exc:" + e.getMessage());
+        } finally {
+            System.out.print(":Done");
+}         
+    }     
+}    
